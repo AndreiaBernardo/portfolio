@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+
+.topo p{
+    font-size:3rem;
+    color: #fff;
+    text-shadow: 0 0 5px #cc7998, 0 0 10px #cc7998, 0 0 20px #cc7998, 0 0 40px #cc7998, 0 0 80px #cc7998;
+    animation: glow 1.5s infinite alternate;
+}
+@keyframes glow{
+    0%{
+        text-shadow: 0 0 5px #cc7998, 0 0 10px #cc7998, 0 0 20px #cc7998, 0 0 40px #cc7998, 0 0 80px #cc7998;
+    }
+    100%{
+        text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
+    }
+}
+
+.card{
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-sm);
+    padding: calc(var(--spacing) * 2)
+}
